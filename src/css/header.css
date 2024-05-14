@@ -1,0 +1,96 @@
+#header {
+    background-image: linear-gradient(var(--blue), blue) ;
+    height: 150px;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px 50px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+#header .about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#header .info {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#header .info svg {
+    width: 20px;
+    height: 20px;
+}
+
+#header .info a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#header .search-logo-cart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .search-logo-cart-container .logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    align-self: start;
+}
+
+#header .search-logo-cart-container .motto p{
+ margin: 0;
+ font-size: 16px;
+}
+
+#header .search-logo-cart-container .motto p:last-child{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#header .search-logo-cart-container .search {
+    width: 50%;
+    height: auto;
+}
+
+#header .search-logo-cart-container .search-bar {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
+    color: black;
+    border: none;
+}
+
+#header .search-logo-cart-container .cart svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#header .search-logo-cart-container .cart {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    padding: 7px 10px;
+    cursor: pointer;
+    border: 2px solid yellow;
+    height: 50px;
+}
+
+#header .search-logo-cart-container .tag-list {
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
