@@ -1,5 +1,5 @@
+import logo from "../../assets/8c12450df63577e0a584ef986cab9ad1.jpg";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/8c12450df63577e0a584ef986cab9ad1.jpg";
 const Header = () => {
   const navigate = useNavigate();
   return (
@@ -22,14 +22,7 @@ const Header = () => {
           </svg>
           <span> Tìm hiểu thêm về chúng tôi </span>
           <span>
-            <a
-              onClick={() => {
-                navigate("/about-us");
-              }}
-            >
-              {" "}
-              Xem chi tiết
-            </a>
+            <a onClick={() => navigate("/about-us/intro")}> Xem chi tiết</a>
           </span>
         </div>
         <div className="phone">Tư vấn ngay: 1800 1299</div>
@@ -56,7 +49,7 @@ const Header = () => {
             <span>Iphone 15</span>
             <span>Laptop</span>
             <span>Mac book 12 pro</span>
-            <span>Smart TV</span>
+            <span>Smart Home</span>
             <span>Ghế công thái học</span>
             <span>Phụ kiện</span>
           </div>

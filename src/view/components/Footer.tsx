@@ -1,24 +1,42 @@
-import logo from "../assets/8c12450df63577e0a584ef986cab9ad1.jpg";
-import "../css/footer.css";
+import logo from "../../assets/8c12450df63577e0a584ef986cab9ad1.jpg";
+import "../../css/footer.css";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div id="footer">
       <div className="info-container">
         <img className="logo" alt="logo" src={logo}></img>
         <div className="about-us info">
           <h6>Về chúng tôi</h6>
-          <span>Giới thiệu</span>
-          <span>Hệ thống cửa hàng</span>
-          <span>Giấy phép kinh doanh</span>
-          <span>Quy chế hoạt động</span>
-          <span>Chính sách đặt cọc</span>
-          <span>Chính sách nội dung</span>
-          <span>Chính sách đổi trả thuốc</span>
-          <span>Chính sách giao hàng</span>
-          <span>Chính sách bảo mật</span>
-          <span>Chính sách thanh toán</span>
-          <span>Kiểm tra hóa đơn điện tử</span>
-          <span>Chính sách thu thập và xử lý dữ liệu cá nhân</span>
+          <span onClick={() => navigate("/about-us/intro")}>Giới thiệu</span>
+          <span onClick={() => navigate("/about-us/regulation")}>
+            Quy chế hoạt động
+          </span>
+          <span onClick={() => navigate("/about-us/deposit")}>
+            Chính sách đặt cọc
+          </span>
+          <span onClick={() => navigate("/about-us/content")}>
+            Chính sách nội dung
+          </span>
+          <span onClick={() => navigate("/about-us/return")}>
+            Chính sách đổi trả hàng
+          </span>
+          <span onClick={() => navigate("/about-us/shipment")}>
+            Chính sách giao hàng
+          </span>
+          <span onClick={() => navigate("/about-us/security")}>
+            Chính sách bảo mật
+          </span>
+          <span onClick={() => navigate("/about-us/payment")}>
+            Chính sách thanh toán
+          </span>
+          <span onClick={() => navigate("/about-us/bill")}>
+            Kiểm tra hóa đơn điện tử
+          </span>
+          <span onClick={() => navigate("/about-us/data")}>
+            Chính sách thu thập và xử lý dữ liệu cá nhân
+          </span>
         </div>
         <div className="category info">
           <h6>Danh mục</h6>

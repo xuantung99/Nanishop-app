@@ -81,12 +81,11 @@
     border-radius: 20px;
     padding: 7px 10px;
     cursor: pointer;
-    border: 2px solid yellow;
+    border: 2.5px solid yellow;
     height: 50px;
 }
 
 #header .search-logo-cart-container .tag-list {
-    font-weight: normal;
     font-size: 13px;
     text-decoration: underline;
     display: flex;
